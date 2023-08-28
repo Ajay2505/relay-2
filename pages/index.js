@@ -250,7 +250,7 @@ pinnedInput[1].addEventListener("input", (evt) => {
     document.querySelectorAll(".pinned_value")[1].innerText = evt.target.value;
 });
 
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
     slidesPerView: 5,
     spaceBetween: 100,
     loop: true,
@@ -318,6 +318,6 @@ if(navigator.platform.match('Mac') !== null) {
     document.querySelector('.vector_section').style.background = '#6554F6'; //  for Mac users
     document.querySelector('.curve svg').style.fill = '#6554F6'; 
 } else {
-    document.querySelector('.vector_section').style.background = '#8355E4'; // for Windows users
-    document.querySelector('.curve svg').style.fill = '#8355E4'; 
+    document.querySelector('.vector_section').style.background = '#594CFF'; // for Windows users
+    document.querySelector('.curve svg').style.fill = '#594CFF'; 
 }
