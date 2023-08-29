@@ -13,6 +13,19 @@ const adv = () => {
     setSteps();
 }
 
+gsap.registerPlugin(ScrollTrigger);
+const lenis = new Lenis({
+    duration: 2.3
+});
+
+lenis.on('scroll', ScrollTrigger.update)
+
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 1000);
+})
+
+gsap.ticker.lagSmoothing(0);
+
 
 const mainCalc = (bool) => {
     calc();
@@ -544,6 +557,8 @@ const calendlySwiper = new Swiper(".calendlySwiper", {
 const calendlyModal = () => {
     document.querySelector(".calendy_modal").classList.add("show");
     document.getElementById("name").focus();
+    // stopLenisScroll();
+    lenis.stop();
     document.body.style.overflow = 'hidden';
     calendlySwiper.slideTo(0);
 };
@@ -559,6 +574,8 @@ document.addEventListener('keydown', (evt) => {
 
 document.querySelector(".calendy_modal .close_icon_wrapper").addEventListener("click", () => {
     document.querySelector(".calendy_modal").classList.remove("show");
+    // startLenisScroll();
+    lenis.start();
     document.body.style.overflow = 'auto';
 });
 
@@ -571,26 +588,18 @@ document.querySelector(".calendly_form").addEventListener("submit", (evt) => {
 // Check if the screen width is 1200px or above
 if (window.innerWidth >= 1200) {
     const scrollListener = document.querySelector('.calendly_scroll');
-    let prevScrollPos = 0;
-  
+    const scrollListener2 = document.querySelector('.calendly_scroll_up');
+
     scrollListener.addEventListener('wheel', function(event) {
-      const currentScrollPos = event.deltaY;
-      if (currentScrollPos < prevScrollPos) {
+      if (event.deltaY > 0) {        
         calendlySwiper.slideNext();
       }
-      prevScrollPos = currentScrollPos;
     });
-  
-    const scrollListener2 = document.querySelector('.calendly_scroll_up');
-    let prevScrollPos2 = 0;
-  
+
     scrollListener2.addEventListener('wheel', function(event) {
-      const currentScrollPos = event.deltaY;
-  
-      if (currentScrollPos < prevScrollPos) {
+      if (event.deltaY < 0) {
         calendlySwiper.slidePrev();
       }
-      prevScrollPos2 = currentScrollPos;
     });
 }
   

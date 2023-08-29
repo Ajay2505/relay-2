@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
 
 const mm = gsap.matchMedia();
 
@@ -293,7 +291,7 @@ document.querySelector(".main_range").addEventListener("input", evt => {
     document.querySelector(".main_range_value").innerText = parseInt(element.value).toLocaleString("en-US");
     const value = element.value;
     const per = (value / element.max) * 100;
-    element.style.background = `linear-gradient(to right, #824FE7 0%, #824FE7 ${per}%, #EBEBE5 ${per}%, #EBEBE5 100%)`;
+    element.style.background = `linear-gradient(to right, #5680e9 0%, #5680e9 ${per}%, #EBEBE5 ${per}%, #EBEBE5 100%)`;
 });
 
 document.querySelector(".main_input").addEventListener("focus", (evt) => {
@@ -315,8 +313,8 @@ skewBtns.forEach(btn => {
 });
 
 if(navigator.platform.match('Mac') !== null) {
-    document.querySelector('.vector_section').style.background = '#6554F6'; //  for Mac users
-    document.querySelector('.curve svg').style.fill = '#6554F6'; 
+    document.querySelector('.vector_section').style.background = '#537BE4'; //  for Mac users
+    document.querySelector('.curve svg').style.fill = '#537BE4'; 
 } else {
     document.querySelector('.vector_section').style.background = '#594CFF'; // for Windows users
     document.querySelector('.curve svg').style.fill = '#594CFF'; 
