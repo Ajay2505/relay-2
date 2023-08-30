@@ -15,7 +15,8 @@ const adv = () => {
 
 gsap.registerPlugin(ScrollTrigger);
 const lenis = new Lenis({
-    duration: 2.3
+    duration: 2.3,
+    smoothTouch: true
 });
 
 lenis.on('scroll', ScrollTrigger.update)
@@ -512,8 +513,6 @@ const setSteps = () => {
     window.addEventListener("resize", setSteps);
 }
 
-
-
 document.querySelector(".nav_icon_wrapper").addEventListener("click", (evt) => {
     document.querySelector(".mobile_nav").classList.toggle("active");
     document.querySelector(".nav_icon_wrapper").classList.toggle("active");
@@ -564,17 +563,14 @@ const calendlyModal = () => {
 };
 
 document.addEventListener('keydown', (evt) => {
-    if (evt.key === 'Enter') {
-        const activeSlideIndex = calendlySwiper.activeIndex;
-        if (document.querySelector(".calendy_modal").classList.contains("show") && activeSlideIndex === 0) {
-            calendlySwiper.slideTo(1);
-        }
+    const activeSlideIndex = calendlySwiper.activeIndex;
+    if (evt.key === 'Enter' && document.querySelector(".calendy_modal").classList.contains("show") && activeSlideIndex === 0) {
+        calendlySwiper.slideTo(1);
     }        
 });
 
 document.querySelector(".calendy_modal .close_icon_wrapper").addEventListener("click", () => {
     document.querySelector(".calendy_modal").classList.remove("show");
-    // startLenisScroll();
     lenis.start();
     document.body.style.overflow = 'auto';
 });
