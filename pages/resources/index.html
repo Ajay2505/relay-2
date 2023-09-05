@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<!-- 44318D -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relay</title>
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/lib/swiper/swiper-bundle.min.css">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <link rel="stylesheet" href="/global/global.responsive.css">
+    <link rel="stylesheet" href="resources.css">
+  </head>
+  <body onload="res()">
+    <div class="calendy_modal">
+        <div class="modal_content rounded_main overflow-auto">
+  
+          <div class="logo_wrapper">
+            <img src="/assets/images/Relay Logo.svg" alt="">
+          </div>
+  
+          <a href="javascript:void(0)" class="close_icon_wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+            </svg>
+          </a>
+  
+          <div class="swiper calendlySwiper w-full h-full">
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide overflow-auto w-full h-full">
+                <div class="hstack-lg-rev w-full h-full">
+                  <div class="w-full h-full ps-lg-5 ps-2 pe-lg-5 pe-3 py-3 py-lg-5 calendly_scroll">
+                    <div class="hstack flex-nowrap mt-5 pt-3">
+                      <div class="w-fit mb-auto pe-2 mt-1">
+                        <p class="purple text_lg align-items-center gap-1 d-flex text-nowrap">1 
+                          <svg fill="currColor" height="10" width="11"><path fill="currColor" d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z"></path><path d="M8 4v2H0V4z"></path></svg>
+                        </p>
+                      </div>
+                      <div class="w-full">
+                        <h1 class="text_xl mb-2">What is your name and contact details?</h1>
+                        <form class="calendly_form" action="">
+                          <div class="input_wrapper vstack">
+                            <label for="name">First name</label>
+                            <input type="text" name="name" id="name" placeholder="Jane">
+                          </div>
+                          <div class="input_wrapper vstack">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="name@example.com">
+                          </div>
+                          <div class="hstack gap-3">
+                            <button class="hstack flex-nowrap sub_heading gap-1" type="submit">OK 
+                              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                              </svg>
+                            </button>
+                            <p class="text_md d-none d-lg-block gray_bg">press <span class="fw-bolder"> Enter ↵</span></p>
+                          </div>
+                        </form>
+                      </div>
+  
+                    </div>
+                  </div>
+                  <div class="w-full h-full slide1_img_wrapper">
+                    <img class="w-full h-full" src="/assets/images/calendly-mobile.jpeg" alt="">
+                  </div>
+                </div>
+              </div>
+  
+              <div class="swiper-slide w-full h-full overflow-auto pt-lg-5 pt-3 pe-lg-3 pe-1">
+                <div class="w-full h-full hstack-lg justify-content-between">
+                  <div class="w-full h-full ps-lg-5 ps-2 pt-3 pe-lg-5 pe-3 calendly_scroll_up">
+                    <div class="hstack flex-nowrap mt-5">
+                      <div class="w-fit mb-auto pe-2 mt-1">
+                        <p class="purple text_lg align-items-center gap-1 d-flex text-nowrap">2 
+                          <svg fill="currColor" height="10" width="11"><path fill="currColor" d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z"></path><path d="M8 4v2H0V4z"></path></svg>
+                        </p>
+                      </div>
+                      <div class="w-full slide2_content">
+                        <h1 class="text_xl mb-2">Book a demo with our team* </h1>
+                        <p>On the call we'll go through your needs and show you how Relay might work for your team.</p>
+                        <div class="desc">
+                          <p>On the call we'll go through your needs and show you how Relay might work for your team.</p>
+                          <p>On the call we'll go through your needs and show you how Relay might work for your team.</p>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </div>
+                  <div class="w-full h-full">
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/ajaykumar-tetramind/book-a-demo?hide_event_type_details=1" style="min-width:320px;height:600px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="arrows hstack flex-nowrap">
+              <div class="calendly-prev calendly_arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                </svg>
+              </div>
+              <div class="calendly-next calendly_arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+  
+    <nav>
+        <div class="container py-2 px-1 px-lg-5 d-flex justify-content-between align-items-center">
+            <a class="logo" href="/">
+            <div class="logo_wrapper">
+                <img src="/assets/images/Relay Logo.svg" alt="" />
+            </div>
+            </a>
+
+            <a href="javascript:void(0)" class="nav_icon_wrapper d-inline-block"></a>
+
+            <div class="center_content d-flex align-items-center gap-5">
+            <div class="link_wrapper d-flex align-items-center position-relative">
+                <a class="link" href="/pages/influencer/">Influencer solutions</a>
+                <!-- <div class="img_wrapper icon">
+                <img src="/assets/icons/up.svg" alt="" />
+                </div> 
+                <div class="absolute_block">
+                <div class="position-relative hstack gap-3">
+                    <div class="box green">
+                    <div class="img_wrapper">
+                        <img src="/assets/images/health_navbar.png" alt="" />
+                    </div>
+                    <h4 class="mt-4">Health</h4>
+                    <p class="mb-2">Flexible health insurance for local and remote teams</p>
+                    <a href="/">Learn more 
+                        <div class="icon_wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="line"></div>
+                    <div class="box purple">
+                    <div class="img_wrapper">
+                        <img src="/assets/images/retirement_navbar.png" alt="" />
+                    </div>
+                    <h4 class="mt-4">Health</h4>
+                    <p class="mb-2">Flexible health insurance for local and remote teams</p>
+                    <a href="/">Learn more 
+                        <div class="icon_wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                </div> -->
+            </div>
+
+            <div class="link_wrapper d-flex align-items-center position-relative">
+                <a class="link" href="/pages/advertisers/">Advertiser solutions</a>
+            </div>
+
+            <div class="link_wrapper d-flex align-items-center position-relative">
+                <a class="link" href="#">Resources</a>
+            </div>
+
+            </div>
+            <div class="end_content d-flex align-items-center gap-4">
+            <a href="/">Login</a>
+            <button onclick="calendlyModal()">Book a Demo</button>
+            </div>
+        </div>
+    </nav>
+  
+    <div class="mobile_nav d-lg-none">
+    <div class="container px-1 vstack align-items-center gap-4">
+        <a class="sub_heading" href="/pages/influencer/">Influencer Solutions</a>
+        <a class="sub_heading" href="/pages/advertisers/">Advertiser Solutions</a>
+        <a class="sub_heading" href="#">Resources</a>
+        <a class="sub_heading" href="/">Login</a>
+        <button onclick="calendlyModal()" class="nav_book_btn">Book a demo</button>
+    </div>
+    </div>
+
+    <section class="section_main pink_select p_t_md p_b_sm">
+        <div class="container px-lg-5 px-1">
+            <div class="row px-0">
+                <div class="col-lg-6 ps-lg-0 pe-lg-5 ">
+                    <div class="content_wrapper my-auto w-full h-full">
+                        <p class="gray text_xs text-uppercase rounded_main blue_bg_small w-fit">the blog</p>
+                        <h1 class="main_heading my-4">What Is the Average Pension in Ireland? (Stats, Factors, Tips)</h1>
+                        <p>August 23, 2023</p>
+                        <button class="mt-4 nav_book_btn">Read a article</button>
+                    </div>
+                </div>
+                <div class="col-lg-5 ms-auto px-0">
+                    <div class="img_wrapper ms-lg-auto mx-auto mt-3 mt-lg-0 rounded_main overflow-hidden">
+                        <img src="https://a.storyblok.com/f/155567/5760x3840/cc16723bff/pexels-gustavo-fring-4148965.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blogs_section p_bl_sm">
+        <div class="container px-lg-5 px-1">
+            <h1 class="sec_heading mb-lg-4 mb-2">Latest stories</h1>
+            <div class="hstack justify-content-between gap-4 flex-wrap align-items-center">
+                <div class="hstack gap-3 flex-wrap">
+                    <button class="gray h-fit my-auto hstack place-items-center text_xs text-uppercase rounded_main">Company news
+                        <span class="tick_wrapper">
+                            <svg width="0" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" class="c-PJLV"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.5 11.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Zm-3.457-1.233.517-.543-1.086-1.034-.517.543-2.79 2.93-1.124-1.18-.517-.543-1.086 1.034.517.543 1.667 1.75a.75.75 0 0 0 1.086 0l3.333-3.5Z" fill="#333333" fill-opacity="0.6"></path></svg>
+                        </span>
+                    </button>
+                    <button class="gray h-fit my-auto hstack place-items-center text_xs text-uppercase rounded_main">Meet the team
+                        <span class="tick_wrapper">
+                            <svg width="0" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" class="c-PJLV"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.5 11.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Zm-3.457-1.233.517-.543-1.086-1.034-.517.543-2.79 2.93-1.124-1.18-.517-.543-1.086 1.034.517.543 1.667 1.75a.75.75 0 0 0 1.086 0l3.333-3.5Z" fill="#333333" fill-opacity="0.6"></path></svg>
+                        </span>
+                    </button>
+                    <button class="gray h-fit my-auto hstack place-items-center text_xs text-uppercase rounded_main">Product
+                        <span class="tick_wrapper">
+                            <svg width="0" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" class="c-PJLV"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.5 11.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Zm-3.457-1.233.517-.543-1.086-1.034-.517.543-2.79 2.93-1.124-1.18-.517-.543-1.086 1.034.517.543 1.667 1.75a.75.75 0 0 0 1.086 0l3.333-3.5Z" fill="#333333" fill-opacity="0.6"></path></svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="input_wrapper hstack rounded_main gap-2">
+                    <div class="icon_wrapper">
+                        <svg width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" class="c-PJLV"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.417 10.185a5.769 5.769 0 1 1 10.056 3.86l-.428.428a5.769 5.769 0 0 1-9.628-4.287Zm10.35 5.643a7.269 7.269 0 1 1 1.06-1.06l3.037 3.035.53.53-1.06 1.061-.53-.53-3.037-3.036Z" fill="#8F8F8C"></path></svg>
+                    </div>
+                    <input class="search_input" type="text" placeholder="What are you looking for?">
+                </div>
+            </div>
+            <div class="row py-lg-5 py-3">
+                <div class="col-lg-9 ps-lg-0 pe-lg-5">
+                    <div class="main_blog blog">
+                        <a href="#">
+                            <div class="img_wrapper w-full rounded_main overflow-hidden">
+                                <img class="object-fit-cover" src="https://www.yonder.app/_next/image?url=https%3A%2F%2Fimg2.storyblok.com%2F1200x0%2Ff%2F155567%2F5184x3456%2F8a873e231f%2Fpexels-akil-mazumder-1072824.jpg&w=1920&q=75" alt="">
+                            </div>
+                            <div class="content_wrapper">
+                                <h1 class="sub_heading">What are AVC Pensions? How They Work in Ireland (Pros, FAQs)</h1>
+                                <p class="gray_text">August 16, 2023</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 pe-lg-0">
+                    <div class="vstack gap-3">
+                        <div class="blog small_blog">
+                            <a href="#">
+                                <div class="img_wrapper rounded_main overflow-hidden w-full">
+                                    <img class="object-fit-cover" src="https://www.yonder.app/_next/image?url=https%3A%2F%2Fimg2.storyblok.com%2F1200x0%2Ff%2F155567%2F5184x3456%2F8a873e231f%2Fpexels-akil-mazumder-1072824.jpg&w=1920&q=75" alt="">
+                                </div>
+                                <div class="content_wrapper">
+                                    <h1 class="sub_heading">What are AVC Pensions? How They Work in Ireland (Pros, FAQs)</h1>
+                                    <p class="gray_text">August 16, 2023</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="blog small_blog">
+                            <a href="#">
+                                <div class="img_wrapper rounded_main overflow-hidden w-full">
+                                    <img class="object-fit-cover" src="https://www.yonder.app/_next/image?url=https%3A%2F%2Fimg2.storyblok.com%2F1200x0%2Ff%2F155567%2F5184x3456%2F8a873e231f%2Fpexels-akil-mazumder-1072824.jpg&w=1920&q=75" alt="">
+                                </div>
+                                <div class="content_wrapper">
+                                    <h1 class="sub_heading">What are AVC Pensions? How They Work in Ireland (Pros, FAQs)</h1>
+                                    <p class="gray_text">August 16, 2023</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row four_blogs">
+                <div class="col-lg-6 ps-lg-0 pe-lg-5 ">
+                  <div class="blog">
+                    <a href="#">
+                        <div class="img_wrapper rounded_main overflow-hidden w-full">
+                            <img class="object-fit-cover" src="https://www.yonder.app/_next/image?url=https%3A%2F%2Fimg2.storyblok.com%2F1200x0%2Ff%2F155567%2F5184x3456%2F8a873e231f%2Fpexels-akil-mazumder-1072824.jpg&w=1920&q=75" alt="">
+                        </div>
+                        <div class="content_wrapper">
+                            <h1 class="sub_heading">What are AVC Pensions? How They Work in Ireland (Pros, FAQs)</h1>
+                            <p class="gray_text">August 16, 2023</p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 ps-lg-5 ">
+                  <div class="blog">
+                    <a href="#">
+                        <div class="img_wrapper rounded_main overflow-hidden w-full">
+                            <img class="object-fit-cover" src="https://www.yonder.app/_next/image?url=https%3A%2F%2Fimg2.storyblok.com%2F1200x0%2Ff%2F155567%2F5184x3456%2F8a873e231f%2Fpexels-akil-mazumder-1072824.jpg&w=1920&q=75" alt="">
+                        </div>
+                        <div class="content_wrapper">
+                            <h1 class="sub_heading">What are AVC Pensions? How They Work in Ireland (Pros, FAQs)</h1>
+                            <p class="gray_text">August 16, 2023</p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="row my-5 four_blogs">
+              <div class="col-lg-6 ps-lg-0 pe-lg-5 ">
+                <div class="blog">
+                  <a href="#">
+                      <div class="img_wrapper rounded_main overflow-hidden w-full">
+                          <img class="object-fit-cover" src="https://www.yonder.app/_next/image?url=https%3A%2F%2Fimg2.storyblok.com%2F1200x0%2Ff%2F155567%2F5184x3456%2F8a873e231f%2Fpexels-akil-mazumder-1072824.jpg&w=1920&q=75" alt="">
+                      </div>
+                      <div class="content_wrapper">
+                          <h1 class="sub_heading">What are AVC Pensions? How They Work in Ireland (Pros, FAQs)</h1>
+                          <p class="gray_text">August 16, 2023</p>
+                      </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6 pe-lg-0 ps-lg-5 ">
+                <div class="blog">
+                  <a href="#">
+                      <div class="img_wrapper rounded_main overflow-hidden w-full">
+                          <img class="object-fit-cover" src="https://www.yonder.app/_next/image?url=https%3A%2F%2Fimg2.storyblok.com%2F1200x0%2Ff%2F155567%2F5184x3456%2F8a873e231f%2Fpexels-akil-mazumder-1072824.jpg&w=1920&q=75" alt="">
+                      </div>
+                      <div class="content_wrapper">
+                          <h1 class="sub_heading">What are AVC Pensions? How They Work in Ireland (Pros, FAQs)</h1>
+                          <p class="gray_text">August 16, 2023</p>
+                      </div>
+                  </a>
+              </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="all_blogs px-lg-0 d-grid">
+              <div class="blog">
+                <a href="#">
+                    <div class="img_wrapper rounded_main overflow-hidden w-full">
+                        <img class="object-fit-cover" src="https://www.yonder.app/_next/image?url=https%3A%2F%2Fimg2.storyblok.com%2F1200x0%2Ff%2F155567%2F5184x3456%2F8a873e231f%2Fpexels-akil-mazumder-1072824.jpg&w=1920&q=75" alt="">
+                    </div>
+                    <div class="content_wrapper">
+                        <h1 class="sub_heading">What are AVC Pensions? How They Work in Ireland (Pros, FAQs)</h1>
+                        <p class="gray_text">August 16, 2023</p>
+                    </div>
+                </a>
+              </div>
+              <div class="blog">
+                <a href="#">
+                    <div class="img_wrapper rounded_main overflow-hidden w-full">
+                        <img class="object-fit-cover" src="https://www.yonder.app/_next/image?url=https%3A%2F%2Fimg2.storyblok.com%2F1200x0%2Ff%2F155567%2F5184x3456%2F8a873e231f%2Fpexels-akil-mazumder-1072824.jpg&w=1920&q=75" alt="">
+                    </div>
+                    <div class="content_wrapper">
+                        <h1 class="sub_heading">What are AVC Pensions? How They Work in Ireland (Pros, FAQs)</h1>
+                        <p class="gray_text">August 16, 2023</p>
+                    </div>
+                </a>
+              </div>
+              <div class="blog">
+                <a href="#">
+                    <div class="img_wrapper rounded_main overflow-hidden w-full">
+                        <img class="object-fit-cover" src="https://www.yonder.app/_next/image?url=https%3A%2F%2Fimg2.storyblok.com%2F1200x0%2Ff%2F155567%2F5184x3456%2F8a873e231f%2Fpexels-akil-mazumder-1072824.jpg&w=1920&q=75" alt="">
+                    </div>
+                    <div class="content_wrapper">
+                        <h1 class="sub_heading">What are AVC Pensions? How They Work in Ireland (Pros, FAQs)</h1>
+                        <p class="gray_text">August 16, 2023</p>
+                    </div>
+                </a>
+              </div>
+              <div class="blog d-none">
+                <a href="#">
+                    <div class="img_wrapper rounded_main overflow-hidden w-full">
+                        <img class="object-fit-cover" src="https://www.yonder.app/_next/image?url=https%3A%2F%2Fimg2.storyblok.com%2F1200x0%2Ff%2F155567%2F5184x3456%2F8a873e231f%2Fpexels-akil-mazumder-1072824.jpg&w=1920&q=75" alt="">
+                    </div>
+                    <div class="content_wrapper">
+                        <h1 class="sub_heading">What are AVC Pensions? How They Work in Ireland (Pros, FAQs)</h1>
+                        <p class="gray_text">August 16, 2023</p>
+                    </div>
+                </a>
+              </div>
+              <div class="blog d-none">
+                <a href="#">
+                    <div class="img_wrapper rounded_main overflow-hidden w-full">
+                        <img class="object-fit-cover" src="https://www.yonder.app/_next/image?url=https%3A%2F%2Fimg2.storyblok.com%2F1200x0%2Ff%2F155567%2F5184x3456%2F8a873e231f%2Fpexels-akil-mazumder-1072824.jpg&w=1920&q=75" alt="">
+                    </div>
+                    <div class="content_wrapper">
+                        <h1 class="sub_heading">What are AVC Pensions? How They Work in Ireland (Pros, FAQs)</h1>
+                        <p class="gray_text">August 16, 2023</p>
+                    </div>
+                </a>
+              </div>
+              <div class="blog d-none">
+                <a href="#">
+                    <div class="img_wrapper rounded_main overflow-hidden w-full">
+                        <img class="object-fit-cover" src="https://www.yonder.app/_next/image?url=https%3A%2F%2Fimg2.storyblok.com%2F1200x0%2Ff%2F155567%2F5184x3456%2F8a873e231f%2Fpexels-akil-mazumder-1072824.jpg&w=1920&q=75" alt="">
+                    </div>
+                    <div class="content_wrapper">
+                        <h1 class="sub_heading">What are AVC Pensions? How They Work in Ireland (Pros, FAQs)</h1>
+                        <p class="gray_text">August 16, 2023</p>
+                    </div>
+                </a>
+              </div>
+              <div class="blog d-none">
+                <a href="#">
+                    <div class="img_wrapper rounded_main overflow-hidden w-full">
+                        <img class="object-fit-cover" src="https://www.yonder.app/_next/image?url=https%3A%2F%2Fimg2.storyblok.com%2F1200x0%2Ff%2F155567%2F5184x3456%2F8a873e231f%2Fpexels-akil-mazumder-1072824.jpg&w=1920&q=75" alt="">
+                    </div>
+                    <div class="content_wrapper">
+                        <h1 class="sub_heading">What are AVC Pensions? How They Work in Ireland (Pros, FAQs)</h1>
+                        <p class="gray_text">August 16, 2023</p>
+                    </div>
+                </a>
+              </div>
+              <div class="blog d-none">
+                <a href="#">
+                    <div class="img_wrapper rounded_main overflow-hidden w-full">
+                        <img class="object-fit-cover" src="https://www.yonder.app/_next/image?url=https%3A%2F%2Fimg2.storyblok.com%2F1200x0%2Ff%2F155567%2F5184x3456%2F8a873e231f%2Fpexels-akil-mazumder-1072824.jpg&w=1920&q=75" alt="">
+                    </div>
+                    <div class="content_wrapper">
+                        <h1 class="sub_heading">What are AVC Pensions? How They Work in Ireland (Pros, FAQs)</h1>
+                        <p class="gray_text">August 16, 2023</p>
+                    </div>
+                </a>
+              </div>
+              <div class="blog d-none">
+                <a href="#">
+                    <div class="img_wrapper rounded_main overflow-hidden w-full">
+                        <img class="object-fit-cover" src="https://www.yonder.app/_next/image?url=https%3A%2F%2Fimg2.storyblok.com%2F1200x0%2Ff%2F155567%2F5184x3456%2F8a873e231f%2Fpexels-akil-mazumder-1072824.jpg&w=1920&q=75" alt="">
+                    </div>
+                    <div class="content_wrapper">
+                        <h1 class="sub_heading">What are AVC Pensions? How They Work in Ireland (Pros, FAQs)</h1>
+                        <p class="gray_text">August 16, 2023</p>
+                    </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="nav_book_btn load mx-auto mt-5 d-block">Load More</button>
+    </section>
+
+    <footer class="position-relative pink_select pb-3 overflow-hidden">
+        <div class="container px-lg-5 px-1">
+          <div class="row">
+            <div class="col-lg-5 px-0">
+              <div class="content_wrapper">
+                <h1 class="sec_heading mb-lg-4 mb-2 fw-light">Get started with Relay today</h1>
+                <div class="input_wrapper mb-2">
+                  <input class="footer_input" placeholder="What's your work email?" type="email" />
+                  <button type="button" class="footer_btn" disabled onclick="calendlyModal()">Get Started</button>
+                </div>
+                <p style="color: #FBFAF299;">👋 No initial fees or contracts – get started in minutes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="yellow_dot footer_bounce"></div>
+  
+        <div class="mask_wrapper">
+          <div class="bubble_wrapper bounce_img">
+            <img src="/assets/images/footer_bubble.png" alt="">
+          </div>
+          <div class="video_wrapper">
+            <video autoplay loop muted>
+              <source src="/assets/videos/footer.mp4">
+            </video>
+          </div>
+        </div>
+  
+        <div class="container px-lg-5 px-1">
+  
+          <div class="row m_t_sm row_border">
+            <div class="col-lg-6 p-lg-4 p-2 ps-lg-0">
+              <a class="d-inline-block" href="/">
+                <div class="logo_wrapper">
+                  <img src="/assets/images/Relay Logo Final .png" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6 px-0">
+              <div class="vstack w-full h-full">
+                <div class="hstack w-full h-full justify-content-between">
+                  <div class="w-full h-full p-lg-4 p-2 border_left">
+                    <p class="text_lg mb-lg-4 mb-2">Benefits</p>
+                    <div class="vstack gap-2">
+                      <a href="/">Influencer Growth</a>
+                      <a href="/">Advertisers Growth</a>
+                    </div>
+                  </div>
+                  <div class="w-full h-full p-lg-4 p-2 border_left">
+                    <p class="text_lg mb-lg-4 mb-2">Narratives</p>
+                    <div class="vstack gap-2">
+                      <a href="#media" onclick="lenis.scrollTo('#media')">Social Media</a>
+                      <a href="#media" onclick="lenis.scrollTo('#media')">Agencies</a>
+                      <a href="#media" onclick="lenis.scrollTo('#media')">Advertisers</a>
+                    </div>
+                  </div>
+                  <div class="w-full h-full p-lg-4 p-2 border_left">
+                    <p class="text_lg mb-lg-4 mb-2">Resources</p>
+                    <div class="vstack gap-2">
+                      <a href="#calculator" onclick="lenis.scrollTo('#calculator')">Relay Calculator</a>
+                      <a href="/">Careers</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full h-full border_top">
+                  <div class="border_left p-lg-4 p-2 top w-full h-full">
+                    <p class="text_lg mb-lg-4 mb-2">Our Content</p>
+                    <div class="hstack gap-4 flex-wrap">
+                      <a href="/" class="bg_link">Case studies</a>
+                      <a href="/" class="bg_link">Blogs</a>
+                      <a href="/" class="bg_link">Meet the Team</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div>
+            <p class="mt-lg-4 my-2 my-lg-0">Accelerate Your Agency's Performance with Relay's Efficiency Solutions.</p>
+          </div>
+          <div class="hstack max-lg-vstack justify-content-between mt-lg-4 mt-2">
+            <div class="hstack gap-2 max-lg-vstack">
+              <p>© Copyright 2023</p>
+              <div class="dot"></div>
+            <a href="/">Terms of Service</a>
+            </div>
+            <div class="hstack gap-3 justify-content-center">
+              <a href="/">
+                <img src="/assets/icons/instagram.svg" alt="">
+              </a>
+              <a href="/">
+                <img src="/assets/icons/twitter.svg" alt="">
+              </a>
+              <a href="/">
+                <img src="/assets/icons/linkedin.svg" alt="">
+              </a>
+            </div>
+          </div>
+  
+        </div>
+    </footer>
+  
+      <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script> 
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+      <script src="/lib/swiper/swiper-bundle.min.js"></script>
+      <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="/lib/gsap/gsap.min.js"></script>
+      <script src="/lib/gsap/ScrollTrigger.min.js"></script>
+      <script src="/global/global.js"></script>
+      <script>
+        document.querySelector(".nav_book_btn.load").addEventListener("click", (evt) => {
+          const hiddenBlogs = document.querySelectorAll(".all_blogs .blog.d-none");
+          for (let idx = 0; idx < 3; idx++) {
+            const element = hiddenBlogs[idx];
+            if (element) {
+              element.classList.remove("d-none");
+            } else {
+              evt.target.disabled = true;
+            }
+          }
+        });
+      </script>
+    </body>
+  </html>
+  
+  

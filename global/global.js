@@ -9,6 +9,10 @@ const inf = () => {
     setSteps();
 }
 
+const res = () => {
+    resMain();
+}
+
 const adv = () => {
     setSteps();
 }
@@ -607,3 +611,12 @@ document.querySelector(".calendy_modal .modal_content").addEventListener("click"
     evt.stopPropagation();
 });
   
+
+const resMain = () => {
+    document.querySelector(".search_input").addEventListener("focus", (evt) => {
+        evt.target.parentElement.classList.add("focus");
+    });
+    document.querySelector(".search_input").addEventListener("blur", (evt) => {
+        evt.target.parentElement.classList.remove("focus");
+    });
+}
