@@ -465,7 +465,7 @@ nav{
 
 nav .nav_icon_wrapper {
     position: relative;
-    background-color: var(--bg_sec);
+    background-color: var(--bg-pink);
     width: 30px;
     height: 26px;
 }

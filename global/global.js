@@ -9,12 +9,12 @@ const inf = () => {
     setSteps();
 }
 
-const res = () => {
-    resMain();
-}
-
 const adv = () => {
     setSteps();
+}
+
+const res = () => {
+    resMain();
 }
 
 gsap.registerPlugin(ScrollTrigger);
@@ -619,4 +619,28 @@ const resMain = () => {
     document.querySelector(".search_input").addEventListener("blur", (evt) => {
         evt.target.parentElement.classList.remove("focus");
     });
+    document.querySelector(".nav_book_btn.load").addEventListener("click", (evt) => {
+        const hiddenBlogs = document.querySelectorAll(".all_blogs .blog.d-none");
+        for (let idx = 0; idx < 3; idx++) {
+          const element = hiddenBlogs[idx];
+          if (element) {
+            element.classList.remove("d-none");
+          } else {
+            evt.target.disabled = true;
+          }
+        }
+    });
 }
+
+// var postsLen = 15;
+// var postIndex = 0;
+// for(i=4; i > 0; i--) {
+//     var verticals = Math.ceil(postsLen/i)
+//     postsLen -= verticals;
+//     console.log("block");
+//     for(j=0; j < verticals; j++) {
+//         console.log("box", postIndex);
+//         postIndex++;
+//     }
+//     console.log("block-end");
+// }

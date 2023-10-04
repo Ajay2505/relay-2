@@ -25,6 +25,9 @@
     nav .nav_icon_wrapper {
         display: none !important;
     }
+    .mobile_nav {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
