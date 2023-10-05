@@ -1,11 +1,11 @@
 const index = () => {
     mainCalc(true);
-    map();
+    // map();
 }
 
 const inf = () => {
     mainCalc();   
-    map();
+    // map();
     setSteps();
 }
 
@@ -19,7 +19,8 @@ const res = () => {
 
 gsap.registerPlugin(ScrollTrigger);
 const lenis = new Lenis({
-    duration: 2.3,
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     smoothTouch: true
 });
 
