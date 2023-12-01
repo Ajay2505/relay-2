@@ -1,11 +1,11 @@
 const index = () => {
     mainCalc(true);
-    // map();
+    map();
 }
 
 const inf = () => {
     mainCalc();   
-    // map();
+    map();
     setSteps();
 }
 
@@ -551,11 +551,11 @@ const calendlySwiper = new Swiper(".calendlySwiper", {
         prevEl: ".calendly-prev",
     },
     allowTouchMove: false,
-    // pagination: {
-    //   el: ".calendly-pagination",
-    //   clickable: true,
-    // },
 });
+// pagination: {
+//   el: ".calendly-pagination",
+//   clickable: true,
+// },
 
 
 const calendlyModal = () => {
